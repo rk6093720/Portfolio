@@ -10,16 +10,16 @@ const GithubStat = () => {
       <Stack>
         <Box
           className="react-activity-calendar"
-          m={"auto"}
-          mt="50px"
-          mb={"40px"}
+          m={{base:"auto",md:"auto",lg:"auto"}}
+          mt={{base:"50px",md:"50px",lg:"50px"}}
+          mb={{base:"40px",md:"40px",lg:"40px"}}
         >
           <Link href={`https://github.com/${githubUsername}`} target="_blank">
-            <GitHubCalendar username={githubUsername} />
+            <GitHubCalendar w={{base:"100%",md:"100%",lg:"100%"}} username={githubUsername} />
           </Link>
         </Box>
         <Flex
-          w={"100%"}
+          w={{base:"100%",md:"100%",lg:"100%"}}
           m="auto"
           justifyContent={{ base: "center", md: "space-around" }}
           marginTop="30px"

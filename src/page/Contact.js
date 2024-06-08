@@ -38,6 +38,7 @@ const Contact = () => {
         action="https://getform.io/f/67c67ee3-5564-4501-bd17-7ff4ad2466d5"
         method="POST"
         style={{ width: "40%", textAlign: "center" }}
+        w={{base:"40%",md:"40%",lg:"40%"}}
       >
         <FormLabel htmlFor="name">Name</FormLabel>
         <Input

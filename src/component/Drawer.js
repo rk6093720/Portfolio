@@ -1,24 +1,23 @@
-import { React, ReactNode, useEffect, useRef } from "react";
+import { React, useRef } from "react";
 import { MoonIcon, SunIcon, HamburgerIcon } from "@chakra-ui/icons";
 import { BiDownload } from "react-icons/bi";
 
 import {
   Drawer,
   DrawerBody,
-  DrawerFooter,
+  // DrawerFooter,
   DrawerHeader,
   DrawerOverlay,
   DrawerContent,
   DrawerCloseButton,
   Button,
-  Input,
+  // Input,
   Flex,
   Link,
   Text,
   useDisclosure,
   useColorMode,
 } from "@chakra-ui/react";
-
 export default function DrawerExample({ handleClickScroll, handleResume }) {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const { colorMode, toggleColorMode } = useColorMode();
@@ -46,7 +45,7 @@ export default function DrawerExample({ handleClickScroll, handleResume }) {
 
               <Link
                 id="resume-link-1"
-                href="Parbhat_Resume.pdf"
+                href="Rohit kumar.pdf.pdf"
                 download
                 onClick={handleResume}
                 target="_blank"
@@ -104,7 +103,7 @@ export default function DrawerExample({ handleClickScroll, handleResume }) {
                 class="nav-link about"
                 colorScheme="gray"
                 onClick={() => {
-                  handleClickScroll("about");
+                  handleClickScroll("aboutme");
                 }}
                 variant="ghost"
                 align="center"

@@ -106,7 +106,7 @@ export default function Home() {
               <Heading id="user-detail-name">Rohit Kumar</Heading>
             </Box>
             <Text fontSize={"21px"} color={colors[colorIndex]}>{texts[textIndex]}</Text>
-            <Text fontSize={"lg"}>
+            <Text fontSize={{base:"lg",md:"lg",lg:"lg"}}>
               Analytical and detail-oriented Full Stack Developer in MERN stack.
               Adaptable to learning new technologies, accountable team player,
               and highly productive. Aims to create world-class web applications
@@ -245,7 +245,7 @@ export default function Home() {
             m="10px"
           >
             <Image
-              w={{ base: "200px", lg: "300px" }}
+              w={{ base: "200px",md:"300px", lg: "300px" }}
               mt="-10px"
               rounded={"md"}
               alt={"feature image"}

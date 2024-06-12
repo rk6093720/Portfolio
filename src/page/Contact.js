@@ -7,29 +7,36 @@ import { HiOutlineMail } from "react-icons/hi";
 import {
   FormControl,
   FormLabel,
-  FormErrorMessage,
+  // FormErrorMessage,
   FormHelperText,
   Input,
   Textarea,
   Button,
+  Container,
+  Heading,
 } from "@chakra-ui/react";
-
-import { Box, Heading, SimpleGrid } from "@chakra-ui/react";
 
 const Contact = () => {
   return (
-    <Box
+    <Container
       id="contact"
-      textAlign={"center"}
-      pt="130px"
-      mt={"10"}
+      textAlign={{ base: "center", md: "center", lg: "center" }}
+      pt={{base:"10px",md:"10px"}}
+      // border={{
+      //   base: "1px solid red",
+      //   sm: "1px solid green",
+      //   lg: "1px solid blue",
+      // }}
+      marginTop={{ base: "10px", md: "80px", lg: "10px" }}
+      marginLeft={{ base: "1em", sm: "5em", lg: "8em" }}
+      display={{ base: "flex", md: "flex", lg: "flex" }}
+      justifyContent={{ base: "center", md: "center", lg: "center" }}
+      alignItems={{ base: "center", md: "center", lg: "center" }}
+      flexDirection={{ base: "column", md: "column", lg: "column" }}
       style={{
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        flexDirection: "column",
         gap: "5px",
       }}
+      maxW={{ base: "300%", sm: "80%", lg: "80%" }}
     >
       <Heading>Contact</Heading>
       <h4>Submit the form below to get in touch with me!!</h4>
@@ -38,7 +45,7 @@ const Contact = () => {
         action="https://getform.io/f/67c67ee3-5564-4501-bd17-7ff4ad2466d5"
         method="POST"
         style={{ width: "40%", textAlign: "center" }}
-        w={{base:"40%",md:"40%",lg:"40%"}}
+        w={"40%"}
       >
         <FormLabel htmlFor="name">Name</FormLabel>
         <Input
@@ -106,7 +113,7 @@ const Contact = () => {
           </>
         </a>
       </div>
-    </Box>
+    </Container>
   );
 };
 

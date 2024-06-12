@@ -19,7 +19,7 @@ function HelperProject({ image, title, techStack, desc, github, deploy }) {
       className="project-card"
       maxW="sm"
       m="auto"
-      w="100%"
+      width={{base:"100%",md:"100%",lg:"100%"}}
       borderWidth="1px"
       borderRadius="lg"
       overflow="hidden"

@@ -14,14 +14,7 @@ import {
   Button,
   useColorMode,
 } from "@chakra-ui/react";
-// import {
-//   IoAnalyticsSharp,
-//   IoLogoBitcoin,
-//   IoSearchSharp,
-// } from "react-icons/io5";
 import photo from "../Image/Rohit kumar.jpg";
-// import { ReactElement } from "react";
-// import { BiDownload } from "react-icons/bi";
 import Resume from "../Image/Rohit Kumar.pdf.pdf";
 import { useEffect, useState } from "react";
 const Feature = ({ text, icon, iconBg }) => {
@@ -50,7 +43,7 @@ export default function Home() {
     "Backend Developer",
     "React js Developer",
   ];
-  const colors = ["red", "#28628b", "green", "yellow"];
+  const colors = ["teal", "#28628b", "greenyellow", "yellow"];
   const [textIndex, setTextIndex] = useState(0);
   const [colorIndex, setColorIndex] = useState(0);
   function handleResume() {
@@ -71,12 +64,21 @@ export default function Home() {
   }, [texts.length, colors.length]);
   return (
     <>
-      <Box id="home" h="30px"></Box>
+      <Box id="home" height="30px"></Box>
       <Container
-        maxW={{ base: "95%", sm: "80%" }}
-        m="auto"
-        mt={"40px"}
-        mb={{ base: "-50px", sm: "0px" }}
+        id="home"
+        // border={{
+        //   base: "1px solid red",
+        //   sm: "1px solid green",
+        //   lg: "1px solid blue",
+        // }}
+        maxW={{ base: "300%", sm: "80%",lg:"80%" }}
+        // width={{ base: "120em", sm: "50em", lg: "20em" }}
+        height={{ base: "400px", sm: "400px", lg: "480px" }}
+        margin={{ base: "auto", sm: "auto", lg: "auto" }}
+        marginTop={{ base: "50px", sm: "30px", lg: "50px" }}
+        marginBottom={{ base: "-50px", sm: "0px" }}
+        marginLeft={{ base: "1em", sm: "5em" }}
       >
         <Flex
           justifyContent="space-between"
@@ -105,8 +107,10 @@ export default function Home() {
             >
               <Heading id="user-detail-name">Rohit Kumar</Heading>
             </Box>
-            <Text fontSize={"21px"} color={colors[colorIndex]}>{texts[textIndex]}</Text>
-            <Text fontSize={{base:"lg",md:"lg",lg:"lg"}}>
+            <Text fontSize={"21px"} color={colors[colorIndex]}>
+              {texts[textIndex]}
+            </Text>
+            <Text fontSize={"lg"}>
               Analytical and detail-oriented Full Stack Developer in MERN stack.
               Adaptable to learning new technologies, accountable team player,
               and highly productive. Aims to create world-class web applications
@@ -238,15 +242,23 @@ export default function Home() {
               </Stack>
             </Stack>
           </Stack>
+          {/* image   */}
           <Flex
-            w={{ base: "100%", lg: '"50%"' }}
-            justifyContent={{ base: "center", lg: "end" }}
+            m={"10px"}
             alignItems={"center"}
-            m="10px"
+            justifyContent={{
+              base: "center",
+              lg: "end",
+            }}
+            w={{
+              base: "100%",
+              lg: '"50%"',
+            }}
           >
             <Image
-              w={{ base: "200px",md:"300px", lg: "300px" }}
-              mt="-10px"
+              w={{ base: "100%", md: "300px", lg: "300px" }}
+              marginLeft={{base:"-40px"}}
+              mt={"-9px"}
               rounded={"md"}
               alt={"feature image"}
               src={photo}

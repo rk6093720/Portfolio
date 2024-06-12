@@ -11,7 +11,7 @@ function App() {
     <div style={{ marginTop: "0px" }}>
       <Navbar id="nav-menu" />
       <Home id="home" />
-      <AboutMe id="aboutme" class="about-section" />
+      <AboutMe id="aboutme" />
       <Skill id="skills" />
       <Project id="projects" />
       <GithubStat />

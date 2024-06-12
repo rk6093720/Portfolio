@@ -2,19 +2,28 @@ import { React, useEffect } from "react";
 import {
   Box,
   Flex,
+  // Avatar,
   Link,
   Button,
+  // Menu,
+  // MenuButton,
+  // MenuList,
+  // MenuItem,
+  // Input,
+  // MenuDivider,
   // useDisclosure,
   useColorModeValue,
+  // Stack,
   useColorMode,
+  // Center,
   Text,
 } from "@chakra-ui/react";
 import { MoonIcon, SunIcon } from "@chakra-ui/icons";
 import { BiDownload } from "react-icons/bi";
 import DrawerExample from "./Drawer";
 import Resume from "../Image/Rohit Kumar.pdf.pdf";
-const NavLink = ({ children, onClick }) => (
-  <Button
+const NavLink = ({ children }) => (
+  <Link
     px={2}
     py={1}
     rounded={"md"}
@@ -22,24 +31,23 @@ const NavLink = ({ children, onClick }) => (
       textDecoration: "none",
       bg: useColorModeValue("gray.200", "gray.700"),
     }}
-    onClick={onClick}
-    variant="ghost"
+    href={"#"}
   >
     {children}
-  </Button>
+  </Link>
 );
 
 export default function Navbar() {
   const { colorMode, toggleColorMode } = useColorMode();
   // const { isOpen, onOpen, onClose } = useDisclosure();
-
   useEffect(() => {
-    toggleColorMode("dark");
+    toggleColorMode("light");
   }, []);
 
   const handleClickScroll = (value) => {
     const element = document.getElementById(value);
     if (element) {
+      // 👇 Will scroll smoothly to the top of the next section
       element.scrollIntoView({ behavior: "smooth" });
     }
   };
@@ -47,7 +55,6 @@ export default function Navbar() {
   function handleResume() {
     window.open(`${Resume}`);
   }
-
   return (
     <>
       <Box
@@ -55,7 +62,7 @@ export default function Navbar() {
         bg={useColorModeValue("gray.100", "gray.900")}
         px={4}
         position={{ base: "fixed", md: "fixed", lg: "fixed" }}
-        w={{ base: "40%", md: "100%", lg: "100%" }}
+        width={{ base: "100%", md: "100%", lg: "100%" }}
         zIndex={{ base: "1000", md: "1000", lg: "1000" }}
         top={"0px"}
       >
@@ -65,12 +72,8 @@ export default function Navbar() {
           justifyContent={"space-between"}
           m="auto"
           width={"94%"}
-          
         >
-          <Box
-            w={{ base: "50%", sm: "20%" }}
-            fontSize={"25px"}
-          >
+          <Box w={{ base: "50%", sm: "20%",lg:"20%" }}  fontSize={"25px"}>
             <Text as="em">Rohit Kumar</Text>
           </Box>
 
@@ -87,37 +90,77 @@ export default function Navbar() {
               direction={"row"}
               fontSize="18px"
               alignItems={"center"}
-              
             >
-              <NavLink onClick={() => handleClickScroll("home")}>Home</NavLink>
-              <NavLink onClick={() => handleClickScroll("aboutme")}>
-                About
-              </NavLink>
-              <NavLink onClick={() => handleClickScroll("skills")}>
-                Skills
-              </NavLink>
-              <NavLink onClick={() => handleClickScroll("projects")}>
-                Projects
-              </NavLink>
-              <NavLink onClick={() => handleClickScroll("contact")}>
-                Contact
-              </NavLink>
+              <Button
+                onClick={() => {
+                  handleClickScroll("home");
+                }}
+                colorScheme="gray"
+                variant="ghost"
+              >
+                <Link className="nav-link home">Home</Link>
+              </Button>
+
+              <Button
+                colorScheme="gray"
+                onClick={() => {
+                  handleClickScroll("aboutme");
+                }}
+                variant="ghost"
+              >
+                <Link className="nav-link about">About</Link>
+              </Button>
+
+              <Button
+                onClick={() => {
+                  handleClickScroll("skills");
+                }}
+                colorScheme="gray"
+                variant="ghost"
+              >
+                <Link className="nav-link skills">Skills</Link>
+              </Button>
+
+              <Button
+                onClick={() => {
+                  handleClickScroll("projects");
+                }}
+                colorScheme="gray"
+                variant="ghost"
+              >
+                <Link className="nav-link projects">Projects</Link>
+              </Button>
+
+              <Button
+                onClick={() => {
+                  handleClickScroll("contact");
+                }}
+                colorScheme="gray"
+                variant="ghost"
+              >
+                <Link className="nav-link contact">Contact</Link>
+              </Button>
 
               <Link
                 id="resume-link-1"
                 href={Resume}
+                className="nav-link resume"
                 download
                 onClick={handleResume}
                 target="_blank"
               >
-                <Button colorScheme="teal" size="md">
+                <Button
+                  className="nav-link resume"
+                  id="resume-button-1"
+                  colorScheme="teal"
+                  size="md"
+                >
                   Resume
                   <BiDownload />
                 </Button>
               </Link>
-
               <Button onClick={toggleColorMode}>
-                {colorMode === "light" ? <MoonIcon /> : <SunIcon />}
+                {colorMode === "light" ? <SunIcon /> : <MoonIcon /> }
               </Button>
             </Flex>
           </Flex>

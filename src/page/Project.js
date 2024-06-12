@@ -1,4 +1,4 @@
-import { Box, Heading, SimpleGrid } from "@chakra-ui/react";
+import { Box, Container, Heading, SimpleGrid } from "@chakra-ui/react";
 import React from "react";
 import HelperProject from "./helper";
 import Asos from "../Image/Asos.jpg";
@@ -7,7 +7,20 @@ const Project = () => {
   return (
     // Passing `columns={[2, null, 3]}` and `columns={{sm: 2, md: 3}}`
     // will have the same effect.
-    <Box id="projects" textAlign={"center"} pt="130px" mt={"10"}>
+    <Container
+      id="projects"
+      // border={{
+      //   base: "1px solid red",
+      //   sm: "1px solid green",
+      //   lg: "1px solid blue",
+      // }}
+      margin={{ base: "auto", sm: "auto", lg: "auto" }}
+      maxW={{ base: "100%", sm: "80%", lg: "80%" }}
+      textAlign={{ base: "center", md: "center", lg: "center" }}
+       marginLeft={{ base: "1em", sm: "5em", lg: "8em" }}
+      marginTop={{ base: "50px", sm: "60px", lg: "50px" }}
+      pt="10"
+    >
       <Heading>Projects</Heading>
       <SimpleGrid
         justifyContent="center"
@@ -23,7 +36,7 @@ const Project = () => {
           return <HelperProject key={Date.now() + ind} {...el} />;
         })}
       </SimpleGrid>
-    </Box>
+    </Container>
   );
 };
 

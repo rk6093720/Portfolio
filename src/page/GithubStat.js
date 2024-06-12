@@ -1,25 +1,40 @@
 import React from 'react'
-import { Box, Flex, Heading, Image, Link, Stack } from "@chakra-ui/react";
+import { Box, Container, Flex, Heading, Image, Link, Stack } from "@chakra-ui/react";
 import GitHubCalendar from "react-github-calendar";
 
 const GithubStat = () => {
   const githubUsername = "rk6093720";
   return (
-    <Box marginTop={"130px"} textAlign="center">
+    <Container
+      // border={{
+      //   base: "1px solid red",
+      //   sm: "1px solid green",
+      //   lg: "1px solid blue",
+      // }}
+      maxW={{ base: "300px", sm: "80%", lg: "80%" }}
+      marginTop={{ base: "130px", md: "130px", lg: "130px" }}
+      textAlign={{ base: "center", md: "center", lg: "center" }}
+      marginLeft={{ base: "1em", sm: "5em", lg: "8em" }}
+    >
       <Heading>GitHub Stats</Heading>
       <Stack>
         <Box
           className="react-activity-calendar"
-          m={{base:"auto",md:"auto",lg:"auto"}}
-          mt={{base:"50px",md:"50px",lg:"50px"}}
-          mb={{base:"40px",md:"40px",lg:"40px"}}
+          margin={{ base: "auto", md: "auto", lg: "auto" }}
+          marginTop={{ base: "50px", md: "50px", lg: "50px" }}
+          marginBottom={{ base: "40px", md: "40px", lg: "40px" }}
+          maxW={{ base: "100%", md: "100%", lg: "100%" }}
+          // border={"1px solid blue"}
         >
           <Link href={`https://github.com/${githubUsername}`} target="_blank">
-            <GitHubCalendar w={{base:"100%",md:"100%",lg:"100%"}} username={githubUsername} />
+            <GitHubCalendar
+              w={{ base: "100%", md: "100%", lg: "100%" }}
+              username={githubUsername}
+            />
           </Link>
         </Box>
         <Flex
-          w={{base:"100%",md:"100%",lg:"100%"}}
+          w={{ base: "100%", md: "100%", lg: "100%" }}
           m="auto"
           justifyContent={{ base: "center", md: "space-around" }}
           marginTop="30px"
@@ -68,7 +83,7 @@ const GithubStat = () => {
           </Link>
         </Flex>
       </Stack>
-    </Box>
+    </Container>
   );
 }
 

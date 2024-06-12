@@ -1,6 +1,7 @@
 import {
   Box,
   Center,
+  Container,
   Flex,
   Grid,
   Heading,
@@ -10,17 +11,36 @@ import {
 
 export default function Skill() {
   return (
-    <Center m="auto" pt={100} w="90%" id="skills" flexDirection="column">
-      <Heading>Tech Stack And Developer Tools</Heading>
+    <Center
+      // border={{
+      //   base: "1px solid red",
+      //   sm: "1px solid green",
+      //   lg: "1px solid blue",
+      // }}
+      margin={{ base: "auto", sm: "auto", lg: "auto" }}
+      maxW={{ base: "300%", sm: "80%", lg: "80%" }}
+      marginTop={{ base: "1000px", sm: "500px", lg: "50px" }}
+      pt={{ base: "90px", sm: "100px", lg: "20px" }}
+      id="skills"
+      textAlign={{ base: "center", sm: "center", lg: "center" }}
+      marginLeft={{ base: "1em", sm: "5em", lg: "8em" }}
+      flexDirection={{ base: "column", md: "column", lg: "column" }}
+    >
+      <Heading
+        alignContent={{ base: "center", sm: "center", lg: "center" }}
+        fontSize={"lg"}
+      >
+        Tech Stack And Developer Tools
+      </Heading>
       <Flex
         justifyContent={"space-around"}
         direction={{ base: "column", lg: "row" }}
-        marginTop={"85px"}
+        marginTop={"75px"}
       >
         <Box
           w={{ base: "100%", lg: "48%" }}
           borderRadius={"12px"}
-          p="12px"
+          p={{ base: "5px", sm: "5px", lg: "5px" }}
           boxShadow={"rgba(255, 255, 255, 0.35) 10px 5px 15px;"}
         >
           {/* here */}
@@ -283,7 +303,7 @@ export default function Skill() {
           w={{ base: "100%", lg: "48%" }}
           mt={{ base: "20px", lg: "0px" }}
           borderRadius={"12px"}
-          p="12px"
+          p={{ base: "5px", sm: "5px", lg: "5px" }}
           boxShadow={"rgba(255, 255, 255, 0.35) 10px 5px 15px;"}
         >
           {/* here */}

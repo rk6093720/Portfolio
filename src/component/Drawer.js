@@ -141,6 +141,27 @@ export default function DrawerExample({ handleClickScroll, handleResume }) {
               >
                 Skills
               </Flex>
+              <Flex
+                w="100%"
+                class="nav-link experience"
+                onClick={() => {
+                  handleClickScroll("experience");
+                }}
+                colorScheme="gray"
+                variant="ghost"
+                align="center"
+                p="3"
+                mx="4"
+                borderRadius="lg"
+                role="group"
+                cursor="pointer"
+                _hover={{
+                  bg: "cyan.400",
+                  color: "white",
+                }}
+              >
+                Experience
+              </Flex>
 
               <Flex
                 w="100%"

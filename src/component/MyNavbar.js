@@ -73,7 +73,7 @@ export default function Navbar() {
           m="auto"
           width={"94%"}
         >
-          <Box w={{ base: "50%", sm: "20%",lg:"20%" }}  fontSize={"25px"}>
+          <Box w={{ base: "50%", sm: "20%", lg: "20%" }} fontSize={"25px"}>
             <Text as="em">Rohit Kumar</Text>
           </Box>
 
@@ -120,7 +120,15 @@ export default function Navbar() {
               >
                 <Link className="nav-link skills">Skills</Link>
               </Button>
-
+              <Button
+                onClick={() => {
+                  handleClickScroll("experience");
+                }}
+                colorScheme="gray"
+                variant="ghost"
+              >
+                <Link className="nav-link experience">Experience</Link>
+              </Button>
               <Button
                 onClick={() => {
                   handleClickScroll("projects");
@@ -160,7 +168,7 @@ export default function Navbar() {
                 </Button>
               </Link>
               <Button onClick={toggleColorMode}>
-                {colorMode === "light" ? <SunIcon /> : <MoonIcon /> }
+                {colorMode === "light" ? <SunIcon /> : <MoonIcon />}
               </Button>
             </Flex>
           </Flex>

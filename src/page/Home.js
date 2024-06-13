@@ -1,6 +1,5 @@
 import {
   Container,
-  SimpleGrid,
   Image,
   Link,
   Flex,
@@ -8,7 +7,6 @@ import {
   Text,
   Stack,
   StackDivider,
-  Icon,
   useColorModeValue,
   Box,
   Button,
@@ -17,26 +15,26 @@ import {
 import photo from "../Image/Rohit kumar.jpg";
 import Resume from "../Image/Rohit Kumar.pdf.pdf";
 import { useEffect, useState } from "react";
-const Feature = ({ text, icon, iconBg }) => {
-  return (
-    <Stack direction={"row"} align={"center"}>
-      <Flex
-        w={8}
-        h={8}
-        align={"center"}
-        justify={"center"}
-        rounded={"full"}
-        bg={iconBg}
-      >
-        {icon}
-      </Flex>
-      <Text fontWeight={600}>{text}</Text>
-    </Stack>
-  );
-};
+// const Feature = ({ text, icon, iconBg }) => {
+//   return (
+//     <Stack direction={"row"} align={"center"}>
+//       <Flex
+//         w={8}
+//         h={8}
+//         align={"center"}
+//         justify={"center"}
+//         rounded={"full"}
+//         bg={iconBg}
+//       >
+//         {icon}
+//       </Flex>
+//       <Text fontWeight={600}>{text}</Text>
+//     </Stack>
+//   );
+// };
 
 export default function Home() {
-  const { colorMode, toggleColorMode } = useColorMode();
+  const { colorMode } = useColorMode();
   const texts = [
     "Full Stack Web Developer",
     "Frontend Developer",
@@ -256,9 +254,9 @@ export default function Home() {
             }}
           >
             <Image
-              w={{ base: "100%", md: "300px", lg: "300px" }}
-              marginLeft={{base:"-40px"}}
-              mt={"-9px"}
+              w={{ base: "70%", md: "280px", lg: "300px" }}
+              marginLeft={{base:"-50px"}}
+              marginTop={{base:"8px",md:"8px"}}
               rounded={"md"}
               alt={"feature image"}
               src={photo}

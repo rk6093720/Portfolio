@@ -1,4 +1,4 @@
-import { Box, Container, Heading, SimpleGrid } from "@chakra-ui/react";
+import { Container, Heading, SimpleGrid } from "@chakra-ui/react";
 import React from "react";
 import HelperProject from "./helper";
 import Asos from "../Image/Asos.jpg";
@@ -17,8 +17,8 @@ const Project = () => {
       margin={{ base: "auto", sm: "auto", lg: "auto" }}
       maxW={{ base: "100%", sm: "80%", lg: "80%" }}
       textAlign={{ base: "center", md: "center", lg: "center" }}
-       marginLeft={{ base: "1em", sm: "5em", lg: "8em" }}
-      marginTop={{ base: "50px", sm: "60px", lg: "50px" }}
+       marginLeft={{ base: "0.2em", sm: "5em", lg: "8em" }}
+      marginTop={{ base: "120px", sm: "60px", lg: "50px" }}
       pt="10"
     >
       <Heading>Projects</Heading>

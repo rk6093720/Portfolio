@@ -11,7 +11,7 @@ const GithubStat = () => {
       //   sm: "1px solid green",
       //   lg: "1px solid blue",
       // }}
-      maxW={{ base: "300px", sm: "80%", lg: "80%" }}
+      maxW={{ base: "350px", sm: "80%", lg: "80%" }}
       marginTop={{ base: "130px", md: "130px", lg: "130px" }}
       textAlign={{ base: "center", md: "center", lg: "center" }}
       marginLeft={{ base: "1em", sm: "5em", lg: "8em" }}

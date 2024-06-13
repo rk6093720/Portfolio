@@ -1,7 +1,6 @@
 import {
   Box,
   Center,
-  Container,
   Flex,
   Grid,
   Heading,
@@ -19,7 +18,7 @@ export default function Skill() {
       // }}
       margin={{ base: "auto", sm: "auto", lg: "auto" }}
       maxW={{ base: "300%", sm: "80%", lg: "80%" }}
-      marginTop={{ base: "1000px", sm: "500px", lg: "50px" }}
+      marginTop={{ base: "900px", sm: "500px", lg: "50px" }}
       pt={{ base: "90px", sm: "100px", lg: "20px" }}
       id="skills"
       textAlign={{ base: "center", sm: "center", lg: "center" }}

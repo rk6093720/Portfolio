@@ -64,7 +64,7 @@ const AboutMe = () => {
         margin={{ base: "auto", sm: "auto", lg: "auto" }}
         marginTop={{ base: "600px", sm: "450px", lg: "50px" }}
         marginBottom={{ base: "-50px", sm: "0px" }}
-        marginLeft={{ base: "1em", sm: "5em" }}
+        marginLeft={{ base: "0.2em", sm: "5em" }}
       >
         <Heading mb={"10"} as="h1">
           About Me

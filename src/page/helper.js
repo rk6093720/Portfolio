@@ -16,23 +16,35 @@ import { BsGithub } from "react-icons/bs";
 function HelperProject({ image, title, techStack, desc, github, deploy }) {
   return (
     <Box
+      border={"1px solid teal"}
       className="project-card"
       maxW="sm"
       m="auto"
-      width={{base:"100%",md:"100%",lg:"100%"}}
+      width={{ base: "100%", md: "100%", lg: "100%" }}
       borderWidth="1px"
       borderRadius="lg"
       overflow="hidden"
       mt="10px"
     >
-      <Box borderRadius="lg" overflow="hidden">
-        <Link textDecoration="none" _hover={{ textDecoration: "none" }}>
+      <Box
+        height={{ base: "100%", md: "60%", lg: "100%" }}
+        width={{ base: "100%", md: "100%", lg: "100%" }}
+        borderRadius="lg"
+        overflow="hidden"
+      >
+        <Link
+          height={{ base: "100%", md: "60%", lg: "100%" }}
+          width={{ base: "100%", md: "100%", lg: "100%" }}
+          textDecoration="none"
+          _hover={{ textDecoration: "none" }}
+        >
           <Image
             transform="scale(1.0)"
             src={image}
             alt="some text"
             objectFit="contain"
-            width="100%"
+            height={{ base: "100%", md: "50%", lg: "10%" }}
+            maxW={{ base: "100%", md: "100%", lg: "100%" }}
             transition="0.3s ease-in-out"
             _hover={{
               transform: "scale(1.05)",
@@ -41,16 +53,16 @@ function HelperProject({ image, title, techStack, desc, github, deploy }) {
         </Link>
       </Box>
 
-      <Box p="6">
+      <Box p="4">
         <Box display="flex" flexWrap={"wrap"} alignItems="baseline">
           {techStack?.map((el, ind) => {
             return (
               <Code
                 mr="10px"
-                fontSize={"14px"}
+                fontSize={{ base: "14px", md: "10px", lg: "12px" }}
                 borderRadius="50px"
-                px="10px"
-                mb="4px"
+                px={{base:"5px",md:"5px",lg:"8px"}}
+                mb="2px"
                 colorScheme={"teal"}
               >
                 <Badge
@@ -91,16 +103,19 @@ function HelperProject({ image, title, techStack, desc, github, deploy }) {
 
         <Flex mt={"4"} justifyContent={"space-between"}>
           <Link class="project-github-link" href={github} isExternal>
-            <Button size="sm" colorScheme="teal" variant="solid">
+            <Button
+              size={{ base: "sm", md: "sm", lg: "sm" }}
+              colorScheme="teal"
+              variant="solid"
+            >
               <Text mr={"4px"}>GitHub</Text>
-
               <BsGithub />
             </Button>
           </Link>
 
           <Link class="project-deployed-link" href={deploy} isExternal>
             <Button size="sm" colorScheme="teal" variant="outline">
-              <Text mr={"4px"}>Deployed Link</Text>
+              <Text mr={"5px"}>Deployed Link</Text>
               <BiLinkExternal />
             </Button>
           </Link>

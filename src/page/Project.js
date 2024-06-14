@@ -19,7 +19,7 @@ const Project = () => {
       // height={{ base: "700px", sm: "400px", lg: "600px" }}
       textAlign={{ base: "center", md: "center", lg: "center" }}
       marginLeft={{ base: "0.3em", sm: "5em", lg: "8em" }}
-      marginTop={{ base: "180px", sm: "60px", lg: "150px" }}
+      marginTop={{ base: "120px", sm: "60px", lg: "50px" }}
       pt="10"
     >
       <Heading>Projects</Heading>
@@ -29,7 +29,7 @@ const Project = () => {
         m={"auto"}
         columns={{ base: "1", md: "2", xl: "3" }}
         spacing={{ base: "10px", md: "40px" }}
-        w={{ base: "95%", md: "81%" }}
+        w={{ base: "95%", md: "95%",lg:"98%" }}
         marginTop="70px"
         marginBottom={"50px"}
       >

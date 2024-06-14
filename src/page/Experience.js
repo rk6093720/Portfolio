@@ -21,14 +21,14 @@ const Experience = () => {
         //   sm: "1px solid green",
         //   lg: "1px solid blue",
         // }}
-        maxW={{ base: "90%", sm: "80%", lg: "80%" }}
+        maxW={{ base: "98%", sm: "80%", lg: "80%" }}
         textAlign={{ base: "center", sm: "center", lg: "center" }}
         // width={{ base: "120em", sm: "80%", lg: "80%" }}
         height={{ base: "100%", sm: "100%", lg: "480px" }}
         margin={{ base: "auto", sm: "auto", lg: "auto" }}
         marginTop={{ base: "50px", sm: "80px", lg: "50px" }}
         marginBottom={{ base: "-50px", sm: "0px" }}
-        marginLeft={{ base: "1em", sm: "5em" }}
+        marginLeft={{ base: "0.2em", sm: "5em" }}
         boxShadow="rgba(0, 0, 0, 0.24) 0px 3px 8px"
       >
         <Stack

@@ -57,7 +57,7 @@ const AboutMe = () => {
         //   sm: "1px solid green",
         //   lg: "1px solid blue",
         // }}
-        maxW={{ base: "300%", sm: "80%",lg:"80%" }}
+        maxW={{ base: "98%", sm: "80%",lg:"80%" }}
         textAlign={{base:"center",sm:"center",lg:"center"}}
         // width={{ base: "120em", sm: "80%", lg: "80%" }}
         height={{ base: "400px", sm: "400px", lg: "480px" }}

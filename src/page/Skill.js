@@ -17,12 +17,12 @@ export default function Skill() {
       //   lg: "1px solid blue",
       // }}
       margin={{ base: "auto", sm: "auto", lg: "auto" }}
-      maxW={{ base: "300%", sm: "80%", lg: "80%" }}
-      marginTop={{ base: "900px", sm: "500px", lg: "50px" }}
+      maxW={{ base: "98%", sm: "80%", lg: "80%" }}
+      marginTop={{ base: "900px", sm: "500px", lg: "150px" }}
       pt={{ base: "90px", sm: "100px", lg: "20px" }}
       id="skills"
       textAlign={{ base: "center", sm: "center", lg: "center" }}
-      marginLeft={{ base: "1em", sm: "5em", lg: "8em" }}
+      marginLeft={{ base: "0.2em", sm: "5em", lg: "8em" }}
       flexDirection={{ base: "column", md: "column", lg: "column" }}
     >
       <Heading

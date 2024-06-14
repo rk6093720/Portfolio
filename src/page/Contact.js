@@ -27,8 +27,8 @@ const Contact = () => {
       //   sm: "1px solid green",
       //   lg: "1px solid blue",
       // }}
-      marginTop={{ base: "10px", md: "80px", lg: "10px" }}
-      marginLeft={{ base: "1em", sm: "5em", lg: "8em" }}
+      marginTop={{ base: "10px", md: "80px", lg: "150px" }}
+      marginLeft={{ base: "0.2em", sm: "5em", lg: "8em" }}
       display={{ base: "flex", md: "flex", lg: "flex" }}
       justifyContent={{ base: "center", md: "center", lg: "center" }}
       alignItems={{ base: "center", md: "center", lg: "center" }}
@@ -36,7 +36,7 @@ const Contact = () => {
       style={{
         gap: "5px",
       }}
-      maxW={{ base: "300%", sm: "80%", lg: "80%" }}
+      maxW={{ base: "98%", sm: "80%", lg: "80%" }}
     >
       <Heading>Contact</Heading>
       <h4>Submit the form below to get in touch with me!!</h4>

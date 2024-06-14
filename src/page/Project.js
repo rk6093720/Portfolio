@@ -15,10 +15,11 @@ const Project = () => {
       //   lg: "1px solid blue",
       // }}
       margin={{ base: "auto", sm: "auto", lg: "auto" }}
-      maxW={{ base: "100%", sm: "80%", lg: "80%" }}
+      maxW={{ base: "98%", sm: "80%", lg: "80%" }}
+      // height={{ base: "700px", sm: "400px", lg: "600px" }}
       textAlign={{ base: "center", md: "center", lg: "center" }}
-       marginLeft={{ base: "0.2em", sm: "5em", lg: "8em" }}
-      marginTop={{ base: "120px", sm: "60px", lg: "50px" }}
+      marginLeft={{ base: "0.3em", sm: "5em", lg: "8em" }}
+      marginTop={{ base: "180px", sm: "60px", lg: "150px" }}
       pt="10"
     >
       <Heading>Projects</Heading>

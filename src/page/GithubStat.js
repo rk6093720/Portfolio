@@ -11,10 +11,10 @@ const GithubStat = () => {
       //   sm: "1px solid green",
       //   lg: "1px solid blue",
       // }}
-      maxW={{ base: "350px", sm: "80%", lg: "80%" }}
-      marginTop={{ base: "130px", md: "130px", lg: "130px" }}
+      maxW={{ base: "98%", sm: "80%", lg: "80%" }}
+      marginTop={{ base: "100px", md: "130px", lg: "130px" }}
       textAlign={{ base: "center", md: "center", lg: "center" }}
-      marginLeft={{ base: "1em", sm: "5em", lg: "8em" }}
+      marginLeft={{ base: "0.2em", sm: "5em", lg: "8em" }}
     >
       <Heading>GitHub Stats</Heading>
       <Stack>
@@ -38,7 +38,7 @@ const GithubStat = () => {
           m="auto"
           justifyContent={{ base: "center", md: "space-around" }}
           marginTop="30px"
-          direction={{ base: "column", md: "row" }}
+          direction={{ base: "column", md: "row",lg:"row" }}
         >
           <Link
             w={{ base: "100%", md: "33%" }}

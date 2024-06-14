@@ -70,13 +70,13 @@ export default function Home() {
         //   sm: "1px solid green",
         //   lg: "1px solid blue",
         // }}
-        maxW={{ base: "300%", sm: "80%",lg:"80%" }}
+        maxW={{ base: "98%", sm: "80%",lg:"80%" }}
         // width={{ base: "120em", sm: "50em", lg: "20em" }}
         height={{ base: "400px", sm: "400px", lg: "480px" }}
         margin={{ base: "auto", sm: "auto", lg: "auto" }}
         marginTop={{ base: "50px", sm: "30px", lg: "50px" }}
         marginBottom={{ base: "-50px", sm: "0px" }}
-        marginLeft={{ base: "1em", sm: "5em" }}
+        marginLeft={{ base: "0.2em", sm: "5em" }}
       >
         <Flex
           justifyContent="space-between"

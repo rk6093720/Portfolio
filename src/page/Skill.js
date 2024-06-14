@@ -15,7 +15,7 @@ export default function Skill() {
       //   base: "1px solid red",
       //   sm: "1px solid green",
       //   lg: "1px solid blue",
-      // }}
+      // }} 
       margin={{ base: "auto", sm: "auto", lg: "auto" }}
       maxW={{ base: "98%", sm: "80%", lg: "80%" }}
       marginTop={{ base: "900px", sm: "500px", lg: "150px" }}

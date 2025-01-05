@@ -29,7 +29,7 @@ const Experience = () => {
         marginTop={{ base: "50px", sm: "80px", lg: "50px" }}
         marginBottom={{ base: "-50px", sm: "0px" }}
         marginLeft={{ base: "0.2em", sm: "5em" }}
-       // boxShadow="rgba(0, 0, 0, 0.24) 0px 3px 8px"
+       boxShadow="rgba(0, 0, 0, 0.24) 0px 3px 8px"
       >
         <Stack
           w="100%"

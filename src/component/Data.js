@@ -2,9 +2,9 @@ const Data = [
     {
         "role":"Frontend Developer",
         "Location":"Onsite",
-        "start_Date":"Aug 2023",
+        "start_Date":"Aug 2024",
         "end_Date":"present",
-        "company_name":"Appsage Infosystem Pvt Ltd",
+        "company_name":"IRP INNOVATIVE SOLUTION (OPC) PVT LTD",
         "work":[
             "Develop responsive web pages and applications from scratch using Javascript, React, Redux, and MUI",
             "Utilize GitHub to host and manage development workflows",

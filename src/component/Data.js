@@ -2,7 +2,7 @@ const Data = [
     {
         "role":"Frontend Developer",
         "Location":"Onsite",
-        "start_Date":"Aug 2024",
+        "start_Date":"August 2024",
         "end_Date":"present",
         "company_name":"IRP INNOVATIVE SOLUTION (OPC) PVT LTD",
         "work":[

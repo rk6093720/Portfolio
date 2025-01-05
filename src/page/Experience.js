@@ -59,7 +59,7 @@ const Experience = () => {
               m={{ base: "10px 5%", md: "18px 10px", lg: "5px -120px" }}
               borderRadius={"12px"}
               height={{ lg: "100%" }}
-              boxShadow={"rgba(230, 250, 255, 0.56) 0px 22px 70px 4px;"}
+              // boxShadow={"rgba(230, 250, 255, 0.56) 0px 22px 70px 4px;"}
             >
               <Flex justifyContent={"space-between"} fontWeight={"bold"}>
                 <Text
